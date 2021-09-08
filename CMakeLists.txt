@@ -7,43 +7,59 @@ set(ROS_VERSION $ENV{ROS_VERSION})
 set(MSG_FILES
   "AccelAuxRpt.msg"
   "AllSystemStatuses.msg"
+  "AngVelRpt.msg"
   "BrakeAuxRpt.msg"
+  "BrakeDecelAuxRpt.msg"
+  "BrakeDecelCmd.msg"
+  "CabinClimateCmd.msg"
+  "CabinClimateRpt.msg"
   "ComponentRpt.msg"
   "DateTimeRpt.msg"
   "DetectedObjectRpt.msg"
   "DoorRpt.msg"
+  "DriveTrainFeatureRpt.msg"
   "EngineRpt.msg"
+  "EStopRpt.msg"
+  "GlobalCmd.msg"
+  "GlobalRpt2.msg"
   "GlobalRpt.msg"
   "HeadlightAuxRpt.msg"
   "InteriorLightsRpt.msg"
   "KeyValuePair.msg"
   "LatLonHeadingRpt.msg"
-  "MotorRpt1.msg"
-  "MotorRpt2.msg"
-  "MotorRpt3.msg"
+  "LinearAccelRpt.msg"
+  "NotificationCmd.msg"
   "OccupancyRpt.msg"
-  "PacmodCmd.msg"
-  "ParkingBrakeStatusRpt.msg"
-  "PositionWithSpeed.msg"
+  "ParkingBrakeAuxRpt.msg"
   "RearLightsRpt.msg"
+  "SafetyBrakeCmd.msg"
+  "SafetyBrakeRpt.msg"
+  "SafetyFuncCmd.msg"
+  "SafetyFuncCriticalStopRpt.msg"
+  "SafetyFuncRpt.msg"
   "ShiftAuxRpt.msg"
-  "SteerAuxRpt.msg"
-  "SteerSystemCmd.msg"
-  "SteeringPIDRpt1.msg"
-  "SteeringPIDRpt2.msg"
-  "SteeringPIDRpt3.msg"
-  "SteeringPIDRpt4.msg"
+  "SoftwareVersionRpt.msg"
+  "SteeringAuxRpt.msg"
+  "SteeringCmdLimitRpt.msg"
+  "SteeringCmd.msg"
+  "SteeringMotorRpt1.msg"
+  "SteeringMotorRpt2.msg"
+  "SteeringMotorRpt3.msg"
+  "SupervisoryCtrl.msg"
   "SystemCmdBool.msg"
   "SystemCmdFloat.msg"
   "SystemCmdInt.msg"
+  "SystemCmdLimitRpt.msg"
   "SystemRptBool.msg"
   "SystemRptFloat.msg"
   "SystemRptInt.msg"
+  "TirePressureRpt.msg"
   "TurnAuxRpt.msg"
-  "VehicleDynamicsRpt.msg"
-  "VehicleSpecificRpt1.msg"
+  "VehDynamicsRpt.msg"
   "VehicleSpeedRpt.msg"
   "VinRpt.msg"
+  "WatchdogRpt2.msg"
+  "WatchdogRpt.msg"
   "WheelSpeedRpt.msg"
   "WiperAuxRpt.msg"
   "YawRateRpt.msg"
@@ -75,9 +91,9 @@ if(${ROS_VERSION} EQUAL 1)
     CATKIN_DEPENDS message_runtime
   )
 
-  install(DIRECTORY migration
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/
-  )
+  # install(DIRECTORY migration
+  #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/
+  # )
 
 elseif(${ROS_VERSION} EQUAL 2)
 
@@ -117,9 +133,9 @@ elseif(${ROS_VERSION} EQUAL 2)
     ament_lint_auto_find_test_dependencies()
   endif()
 
-  install(DIRECTORY migration
-    DESTINATION share/${PROJECT_NAME}/
-  )
+  # install(DIRECTORY migration
+  #   DESTINATION share/${PROJECT_NAME}/
+  # )
 
   ament_package()
 

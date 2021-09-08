@@ -9,16 +9,16 @@ uint16 CMD_CRITICAL_STOP1 = 4
 uint16 CMD_CRITICAL_STOP2 = 5
 
 # Safety Function State Constants
-uint16 MANUAL_BRAKED_STATE_ = 0
-uint16 MANUAL_UNBRAKED_STATE = 1
-uint16 AUTO_READY_STATE = 2
-uint16 AUTO_INACTIVE_STATE = 3
-uint16 AUTO_ACTIVE_BRAKED_STATE = 4
-uint16 AUTO_ACTIVE_UNBRAKED_STATE = 5
-uint16 MANUAL_READY_STATE = 6
-uint16 CRITICAL_STOP1_STATE = 7
-uint16 CRITICAL_STOP2_STATE = 8
-uint16 STARTUP_STATE = 9
+uint16 STATE_MANUAL_BRAKED = 0
+uint16 STATE_MANUAL_UNBRAKED = 1
+uint16 STATE_AUTO_READY = 2
+uint16 STATE_AUTO_INACTIVE = 3
+uint16 STATE_AUTO_ACTIVE_BRAKED = 4
+uint16 STATE_AUTO_ACTIVE_UNBRAKED = 5
+uint16 STATE_MANUAL_READY = 6
+uint16 STATE_CRITICAL_STOP1 = 7
+uint16 STATE_CRITICAL_STOP2 = 8
+uint16 STATE_STARTUP = 9
 
 # Auto Manual Operator Control Constants
 uint16 AUTO_MAN_INVALID = 0
@@ -52,9 +52,9 @@ bool pacmod_system_status              # True if enabled
 uint16 user_pc_fault                   # Values defined above in User PC, PACMod, Vehicle Fault Constants
 uint16 pacmod_system_fault             # Values defined above in User PC, PACMod, Vehicle Fault Constants
 
-bool manual_state_obtainable           # True if obtainable    
-bool auto_ready_state_obtainable       # True if obtainable    
-bool auto_state_obtainable             # True if obtainable    
-bool manual_ready_state_obtainable     # True if obtainable    
-bool critical_stop1_state_obtainable   # True if obtainable    
-bool critical_stop2_state_obtainable   # True if obtainable    
+bool manual_state_obtainable           # True if obtainable
+bool auto_ready_state_obtainable       # True if obtainable
+bool auto_state_obtainable             # True if obtainable
+bool manual_ready_state_obtainable     # True if obtainable
+bool critical_stop1_state_obtainable   # True if obtainable
+bool critical_stop2_state_obtainable   # True if obtainable

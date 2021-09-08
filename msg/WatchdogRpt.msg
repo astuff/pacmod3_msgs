@@ -1,5 +1,5 @@
-# PACMod system watchdog report echoing 
-# states and faults of all present systems 
+# PACMod system watchdog report echoing
+# states and faults of all present systems
 # and monitors other faults.
 
 std_msgs/Header header
@@ -10,7 +10,7 @@ bool global_command_timeout_error        # True if timeout occurred on command w
 bool global_pacmod_subsystem_timeout     # Echo of subsystem_can_timeout bit in GLOBAL_RPT. True if timeout occurred.
 bool global_vehicle_can_timeout          # True if a timeout has occurred on a vehicle CAN interface
 bool global_pacmod_system_fault_active   # True if a fault is active on any system
-bool global_config_fault_active          # True if a config fault is active on any pacmod system 
+bool global_config_fault_active          # True if a config fault is active on any pacmod system
 bool global_timeout                      # True if timeout occurred on GLOBAL_RPT
 
 bool accel_enabled                       # Echo of enabled bit in ACCEL_RPT. True if enabled.

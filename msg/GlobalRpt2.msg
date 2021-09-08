@@ -1,4 +1,4 @@
-# Global report 2 
+# Global report 2
 
 std_msgs/Header header
 

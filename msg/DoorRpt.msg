@@ -3,7 +3,7 @@
 std_msgs/Header header
 
 bool driver_door_open               # True if the door is open
-bool passenger_door_open            # True if the door is open                       
+bool passenger_door_open            # True if the door is open
 bool rear_driver_door_open          # True if the door is open
 bool rear_passenger_door_open       # True if the door is open
 bool hood_open                      # True if open

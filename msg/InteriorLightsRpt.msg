@@ -32,7 +32,7 @@ std_msgs/Header header
 bool front_dome_lights_on           # True if ON
 bool rear_dome_lights_on            # True if ON
 bool mood_lights_on                 # True if ON
-bool ambient_light_sensor           # True if bright                   
+bool ambient_light_sensor           # True if bright
 uint8 dim_level                     # Dim level status as reported. Values defined above.
 bool front_dome_lights_on_avail     # True if this information is available on the platform.
                                     # Does not change during operation.

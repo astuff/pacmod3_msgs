@@ -1,4 +1,4 @@
-# Status of Emergency stop switch in PACMod system 
+# Status of Emergency stop switch in PACMod system
 
 std_msgs/Header header
 

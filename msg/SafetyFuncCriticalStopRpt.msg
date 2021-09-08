@@ -4,7 +4,7 @@ std_msgs/Header header
 
 bool automaual_opctrl_fault          # True if fault is active
 bool remote_stop_fault               # True if fault is active
-bool safety_brake_opctrl_off         # True if fault is active           
+bool safety_brake_opctrl_off         # True if fault is active
 bool safety_brake_cmd_timeout        # True if fault is active
 bool safety_func_cmd_timeout         # True if fault is active
 bool safety_func_critical_stop_1_cmd # True if fault is active

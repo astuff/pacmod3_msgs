@@ -20,4 +20,3 @@ bool spray_near_empty_avail     # True if this information is available on the p
                                 # Does not change during operation.
 bool spray_empty_avail          # True if this information is available on the platform.
                                 # Does not change during operation.
-
